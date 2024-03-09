@@ -1,4 +1,5 @@
-﻿namespace LearnEase;
+﻿using Microsoft.Maui.Controls;
+namespace LearnEase;
 
 public partial class App : Application
 {

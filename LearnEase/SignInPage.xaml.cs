@@ -13,8 +13,7 @@ namespace LearnEase
 
         private async void OnSignInClicked(object sender, EventArgs e)
         {
-            // Perform sign-in logic here
-            // For example, validate email and password
+            
             string enteredEmail = EmailEntry.Text;
             string enteredPassword = PasswordEntry.Text;
 
@@ -22,7 +21,7 @@ namespace LearnEase
             string allowedEmail = "Xyz";
             string allowedPassword = "Xyz";
 
-            bool isSignInSuccessful = true; // Replace this with your actual sign-in logic
+            bool isSignInSuccessful = true; 
 
             if (enteredEmail == allowedEmail && enteredPassword == allowedPassword)
             {

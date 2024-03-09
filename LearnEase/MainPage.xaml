@@ -13,7 +13,7 @@
                     VerticalOptions="End">
 
                     <Image
-                        Source="dotnet_bot.png"
+                        Source="secondphoto.jpg"
                         SemanticProperties.Description="Cute dot net bot waving hi to you!"
                         HeightRequest="200"
                         HorizontalOptions="Center" />

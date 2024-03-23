@@ -11,7 +11,8 @@ public class CourseDetailPage : ContentPage
         Content = new StackLayout
         {
             Children = {
-                
+                new Label { Text = $"Details for {courseName}" }
+                // Add more details about the course here.
             }
         };
     }

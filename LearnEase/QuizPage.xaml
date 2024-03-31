@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnEase.QuizPage"
+             Title="Programming Quiz">
+            <ScrollView>
+    <StackLayout>
+        <!-- Question 1 -->
+        <Label Text="1. What does HTML stand for?" />
+        <StackLayout x:Name="Question1Options">
+            <RadioButton Content="Hyper Text Markup Language" GroupName="Question1" />
+            <RadioButton Content="Hyperlinks and Text Markup Language" GroupName="Question1" />
+            <RadioButton Content="Home Tool Markup Language" GroupName="Question1" />
+            <RadioButton Content="Hyper Text Main Language" GroupName="Question1" />
+        </StackLayout>
+
+        <!-- Question 2 -->
+        <Label Text="2. Which programming language is used for building Android apps?" />
+        <StackLayout x:Name="Question2Options">
+            <RadioButton Content="Java" GroupName="Question2" />
+            <RadioButton Content="Python" GroupName="Question2" />
+            <RadioButton Content="C#" GroupName="Question2" />
+            <RadioButton Content="Swift" GroupName="Question2" />
+        </StackLayout>
+
+        <!-- Question 3 -->
+        <Label Text="3. What is the output of 'print(2 + 2 * 2)' in Python?" />
+        <StackLayout x:Name="Question3Options">
+            <RadioButton Content="6" GroupName="Question3" />
+            <RadioButton Content="8" GroupName="Question3" />
+            <RadioButton Content="10" GroupName="Question3" />
+            <RadioButton Content="12" GroupName="Question3" />
+        </StackLayout>
+
+        <!-- Question 4 -->
+        <Label Text="4. Which data structure uses Last In, First Out (LIFO) principle?" />
+        <StackLayout x:Name="Question4Options">
+            <RadioButton Content="Stack" GroupName="Question4" />
+            <RadioButton Content="Queue" GroupName="Question4" />
+            <RadioButton Content="Array" GroupName="Question4" />
+            <RadioButton Content="Linked List" GroupName="Question4" />
+        </StackLayout>
+
+        <!-- Question 5 -->
+        <Label Text="5. What is the result of 2 ^ 3 in C#?" />
+        <StackLayout x:Name="Question5Options">
+            <RadioButton Content="6" GroupName="Question5" />
+            <RadioButton Content="8" GroupName="Question5" />
+            <RadioButton Content="10" GroupName="Question5" />
+            <RadioButton Content="9" GroupName="Question5" />
+        </StackLayout>
+
+        <!-- Submit Button -->
+        <Button Text="Submit Quiz" Clicked="OnSubmitQuizClicked" />
+    </StackLayout>
+                        </ScrollView>
+</ContentPage>

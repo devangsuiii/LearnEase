@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnEase.CourseDetailPage"
+             Title="Course Detail">
+    <VerticalStackLayout>
+        <!-- Course Title Label -->
+        <Label 
+            Text="{Binding CourseTitle}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <!-- Image -->
+        <Image Source="firstimage1.jpg" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"/>
+
+        <!-- Course Description Label -->
+         <Label 
+            Text="{Binding Duration}"
+            Margin="10"/>
+
+        <Label 
+            Text="{Binding CourseDescription}"
+            Margin="10"/>
+
+        <Label 
+            Text="{Binding time}"
+            Margin="10"/>
+
+        
+
+        <!-- Button to View Videos -->
+        <Button Text="Course Content" Margin="10,5" HorizontalOptions="Fill" Clicked="OnEnrollNowClicked_videos"/>
+        <Button Text="Take Quiz" Margin="10,5" HorizontalOptions="Fill" Clicked="OnEnrollNowClicked_Quiz"/>
+    </VerticalStackLayout>
+</ContentPage>

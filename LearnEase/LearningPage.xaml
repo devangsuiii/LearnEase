@@ -10,43 +10,107 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                <!-- Welcome Label -->
                 <Label Text="Welcome, Devang Panchal"
                        HorizontalOptions="StartAndExpand"
                        VerticalOptions="StartAndExpand"
                        FontSize="16"
                        FontAttributes="Bold"
-                       Margin="20,15,0,0" />
+                       Margin="20,18,0,0" />
 
-                 <Image
-                        Source="firstimage1.jpg"
-                        Aspect="AspectFill"          
-                        VerticalOptions="CenterAndExpand"
-                        Margin="0,-255,0,0" 
-                        HeightRequest="200"
-                        HorizontalOptions="Center" />
+                <!-- Welcome Image -->
+                <Image Source="firstimage1.jpg"
+                       Aspect="AspectFill"          
+                       VerticalOptions="CenterAndExpand"
+                       Margin="0,0,0,0" 
+                       HeightRequest="200"
+                       HorizontalOptions="Center" />
 
+                <!-- Free Course Thank You Label -->
                 <Label Text="Devang, thanks for trying a free course" 
-                                                
                        HorizontalOptions="Start" 
                        VerticalOptions="FillAndExpand"
                        FontSize="22"
                        FontAttributes="Bold,Italic"
-                       Margin="20,-100,0,0" />
+                       Margin="20,20,0,0" />
 
+                <!-- Unlock Features Label -->
                 <Label Text="Now, unlock our best features with courses as low as $17.99 - limited time only"
                        HorizontalOptions="StartAndExpand"
                        VerticalOptions="Start"
                        FontSize="16"
                        FontAttributes="Bold"
-                       Margin="20,-220,0,0" />
+                       Margin="20,25,0,0" />
 
+                <!-- Recommended for You Label -->
                 <Label Text="Recommended for you"
                        HorizontalOptions="Start"
                        VerticalOptions="FillAndExpand"
                        FontSize="22"
                        FontAttributes="Bold,Bold,Bold"
-                       Margin="20,-150,0,0" />
-               
+                       Margin="20,50,0,0" />
+
+                <!-- Course Cards Scrollview -->
+                <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="20,20,0,20">
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        
+                        <!-- Course Card 1 -->
+                        <Frame Padding="5" WidthRequest="300">
+                            <StackLayout>
+                                <Image Source="course_image_1.jpg" Aspect="AspectFill" />
+                                <Label Text="Introduction to Programming" FontAttributes="Bold" Margin="10,5,10,0"/>
+                                <Label Text="Start your coding journey with this introductory course." Margin="10,0,10,5"/>
+                                <Button Text="Enroll Now" Margin="10,5" HorizontalOptions="Fill" Clicked="OnEnrollNowClicked_IntroToProgramming"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Course Card 2 -->
+                        <Frame Padding="5" WidthRequest="300">
+                            <StackLayout>
+                                <Image Source="course_image_2.jpg" Aspect="AspectFill" />
+                                <Label Text="Advanced Web Development" FontAttributes="Bold" Margin="10,5,10,0"/>
+                                <Label Text="Dive deeper into web development with this advanced course." Margin="10,0,10,5"/>
+                                <Button Text="Enroll Now" Margin="10,5" HorizontalOptions="Fill" Clicked="OnEnrollNowClicked_AdvancedWebDev"/>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+                </ScrollView>
+
+                <Label Text="Recommended Marketing Course"
+                       HorizontalOptions="Start"
+                       VerticalOptions="FillAndExpand"
+                       FontSize="22"
+                       FontAttributes="Bold,Bold,Bold"
+                       Margin="20,50,0,0" />
+
+                <!-- Course Cards Scrollview -->
+                <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="20,20,0,20">
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        
+                        <!-- Course Card 1 -->
+                        <Frame Padding="5" WidthRequest="300">
+                            <StackLayout>
+                                <Image Source="course_image_1.jpg" Aspect="AspectFill" />
+                                <Label Text="Introduction to Digital Marketing" FontAttributes="Bold" Margin="10,5,10,0"/>
+                                <Label Text="Start your coding journey with this introductory course." Margin="10,0,10,5"/>
+                                <Button Text="Enroll Now" Margin="10,5" HorizontalOptions="Fill" Clicked="OnEnrollNowClicked_DigitalMarketing"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Course Card 2 -->
+                        <Frame Padding="5" WidthRequest="300">
+                            <StackLayout>
+                                <Image Source="course_image_2.jpg" Aspect="AspectFill" />
+                                <Label Text="Advanced Google Ads" FontAttributes="Bold" Margin="10,5,10,0"/>
+                                <Label Text="Dive deeper into web development with this advanced course." Margin="10,0,10,5"/>
+                                <Button Text="Enroll Now" Margin="10,5" HorizontalOptions="Fill" Clicked="OnEnrollNowClicked_googleAds"/>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+                </ScrollView>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
